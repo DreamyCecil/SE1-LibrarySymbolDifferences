@@ -1,5 +1,9 @@
 LIBRARY ENGINE 
 EXPORTS 
+??0?$CObjectOption@VCTerrain@@@@QAE@ABV0@@Z 
+??0?$CObjectOption@VCTerrain@@@@QAE@PBVCSetting@@PBD_N@Z 
+??0?$CObjectSetting@VCTerrain@@@@QAE@ABV0@@Z 
+??0?$CObjectSetting@VCTerrain@@@@QAE@PBD@Z 
 ??0CAnimData@@QAE@XZ 
 ??0CAnimObject@@QAE@XZ 
 ??0CAnimSet@@QAE@ABV0@@Z 
@@ -55,6 +59,8 @@ EXPORTS
 ??0CCommunicationInterface@@QAE@XZ 
 ??0CContentType@@QAE@ABV0@@Z 
 ??0CContentType@@QAE@XZ 
+??0CD3DObjectMonitor@@IAE@XZ 
+??0CD3DObjectMonitor@@QAE@ABV0@@Z 
 ??0CDisableAsyncProgress@@QAE@XZ 
 ??0CDisplayMode@@QAE@XZ 
 ??0CDrawPort@@QAE@PAV0@ABV?$AABBox@J$01@@@Z 
@@ -360,6 +366,8 @@ EXPORTS
 ??0SkeletonLOD@@QAE@ABU0@@Z 
 ??0SkeletonLOD@@QAE@XZ 
 ??0TransformedVertexData@@QAE@XZ 
+??1?$CObjectOption@VCTerrain@@@@UAE@XZ 
+??1?$CObjectSetting@VCTerrain@@@@UAE@XZ 
 ??1CAnimData@@UAE@XZ 
 ??1CAnimObject@@QAE@XZ 
 ??1CAnimSet@@UAE@XZ 
@@ -383,6 +391,7 @@ EXPORTS
 ??1CCollisionInfo@@QAE@XZ 
 ??1CCommunicationInterface@@QAE@XZ 
 ??1CContentType@@QAE@XZ 
+??1CD3DObjectMonitor@@IAE@XZ 
 ??1CDisableAsyncProgress@@QAE@XZ 
 ??1CDrawPort@@QAE@XZ 
 ??1CEditModel@@UAE@XZ 
@@ -514,6 +523,8 @@ EXPORTS
 ??1ModelPolygon@@QAE@XZ 
 ??1PolygonsPerPatch@@QAE@XZ 
 ??1SkeletonLOD@@QAE@XZ 
+??4?$CObjectOption@VCTerrain@@@@QAEAAV0@ABV0@@Z 
+??4?$CObjectSetting@VCTerrain@@@@QAEAAV0@ABV0@@Z 
 ??4CAnimSet@@QAEAAV0@ABV0@@Z 
 ??4CAnimTriggerMap@@QAEAAV0@ABV0@@Z 
 ??4CAnimationFrameEvent@@QAEAAV0@ABV0@@Z 
@@ -550,6 +561,7 @@ EXPORTS
 ??4CCollisionInfo@@QAEAAV0@ABV0@@Z 
 ??4CCommunicationInterface@@QAEAAV0@ABV0@@Z 
 ??4CContentType@@QAEAAV0@ABV0@@Z 
+??4CD3DObjectMonitor@@QAEAAV0@ABV0@@Z 
 ??4CDLLEntityClass@@QAEAAV0@ABV0@@Z 
 ??4CDLLEntityEvent@@QAEAAV0@ABV0@@Z 
 ??4CDisableAsyncProgress@@QAEAAV0@ABV0@@Z 
@@ -810,6 +822,8 @@ EXPORTS
 ??YCTWString@@QAEAAV0@ABV0@@Z 
 ??_6@YAXAAV?$Matrix@N$02$02@@ABV?$Vector@M$02@@@Z 
 ??_6@YAXAAV?$Vector@M$02@@ABV?$Matrix@N$02$02@@@Z 
+??_7?$CObjectOption@VCTerrain@@@@6B@ 
+??_7?$CObjectSetting@VCTerrain@@@@6B@ 
 ??_7CAnimSet@@6B@ 
 ??_7CAnimationFrameEvent@@6B@ 
 ??_7CBrush3D@@6B@ 
@@ -877,18 +891,13 @@ EXPORTS
 ??_7ETouch@@6B@ 
 ??_7EVoid@@6B@ 
 ??_7EWouldFall@@6B@ 
-??_C@_00A@?$AA@ 
-??_C@_04GPCF@?5?5?5?5?$AA@ 
-??_C@_0BF@CHKA@Invalid?5map?5size?5?$CIx?$CJ?$AA@ 
-??_C@_0BF@DBAK@Invalid?5map?5size?5?$CIy?$CJ?$AA@ 
-??_C@_0CE@CGJN@ETRSWarning?3?5Message?5over?9readin@ 
-??_C@_0CE@LJHK@ETRSWarning?3?5Message?5over?9writin@ 
 ??_FCChunkID@@QAEXXZ 
 ??_FCIntersector@@QAEXXZ 
 ??_FCTimer@@QAEXXZ 
 ?AbsoluteToRelative@CPlacement3D@@QAEXABV1@@Z 
 ?AbsoluteToRelativeSmooth@CPlacement3D@@QAEXABV1@@Z 
 ?Accept@CWaitingRoom@@QAEXXZ 
+?Activate@CFullScreenEffects@@QAEX_N0@Z 
 ?ActivateNextCollisionBox@CEditModel@@QAEXXZ 
 ?ActivatePreviousCollisionBox@CEditModel@@QAEXXZ 
 ?ActiveRemoteSessions@CServer@@QAEJXZ 
@@ -913,7 +922,6 @@ EXPORTS
 ?AddEffectSource@CTextureEffectGlobal@@QAEXKJJJJ@Z 
 ?AddEntityToCollisionGrid@CWorld@@QAEXPAVCEntity@@ABV?$AABBox@M$02@@@Z 
 ?AddEvent@CAnimTriggerMap@@QAE_NPAVCAnimationFrameEvent@@@Z 
-?AddExtension_OGL@CGfxLibrary@@AAEXKPBD@Z 
 ?AddFlag@CTerrainBrush@@QAEXK@Z 
 ?AddFlag@CTerrainTile@@QAEXK@Z 
 ?AddFlagsToPlayingAnim@CModelInstance@@QAEHJK@Z 
@@ -983,6 +991,7 @@ EXPORTS
 ?AllocateVirtualMemory@CTStream@@QAEXK@Z 
 ?AllowForGroundPolygon@CMovableEntity@@UAEHPAVCBrushPolygon@@@Z 
 ?AnglesToDirectionVector@@YAXABV?$Vector@M$02@@AAV1@@Z 
+?Apply@?$CObjectOption@VCTerrain@@@@EBEXXZ 
 ?Apply@CSetting@@QBEXXZ 
 ?ApplyAction@CPlayerEntity@@UAEXABVCPlayerAction@@M@Z 
 ?ApplyActionLocally@CPlayerSource@@QAEXABVCPlayerAction@@@Z 
@@ -1120,6 +1129,8 @@ EXPORTS
 ?ClampMipLevel@CTextureData@@QBEJM@Z 
 ?ClampTextureSize@@YAJJJJJ@Z 
 ?CleanUp@CTerrainRenderer@@AAEXXZ 
+?CleanUpD3DObjects@CGfxLibrary@@QAEXXZ 
+?Cleanup@CD3DObjectMonitor@@QAEXXZ 
 ?Clear@CAnimData@@UAEXXZ 
 ?Clear@CAnimSet@@UAEXXZ 
 ?Clear@CAnimTriggerMap@@QAEXXZ 
@@ -1309,7 +1320,6 @@ EXPORTS
 ?CreateBSPPolygon@CBrushPolygon@@QAEXAAV?$BSPPolygon@N$02@@@Z 
 ?CreateBSPPolygonNonPrecise@CBrushPolygon@@QAEXAAV?$BSPPolygon@N$02@@@Z 
 ?CreateCap@MeshLOD@@AAEXAAV?$vector@PAUMeshEdge@@V?$allocator@PAUMeshEdge@@@_STL@@@_STL@@PAUMeshVertex@@AAPAUMeshEdgeTriangle@@AAPAUMeshEdge@@@Z 
-?CreateContext_OGL@CGfxLibrary@@AAEHPAUHDC__@@@Z 
 ?CreateEdgeList@MeshLOD@@QAEXPAUMeshVertex@@@Z 
 ?CreateEffectTexture@CTextureData@@QAEXJJJPAV1@K@Z 
 ?CreateEmptyAttachingSounds@CEditModel@@QAEXXZ 
@@ -1329,6 +1339,7 @@ EXPORTS
 ?CreateSubDrawPort@CDrawPort@@QAE?AV1@ABV?$AABBox@J$01@@@Z 
 ?CreateSubDrawPortRatio@CDrawPort@@QAE?AV1@ABV?$AABBox@M$01@@@Z 
 ?CreateSurfaceEdgeList@MeshLOD@@AAE_NABUMeshSurface@@PAUMeshVertex@@AAPAUMeshEdgeTriangle@@AAPAUMeshEdge@@@Z 
+?CreateTexture@CD3DObjectMonitor@@QAEJPAUIDirect3DDevice9@@IIIKW4_D3DFORMAT@@W4_D3DPOOL@@PAPAUIDirect3DTexture9@@PAPAX@Z 
 ?CreateTexture@CTerrainUtils@@SAPAVCTextureData@@XZ 
 ?CreateTexture_t@@YAXABVCTFileName@@0JJK@Z 
 ?CreateTexture_t@@YAXABVCTFileName@@JJK@Z 
@@ -1343,6 +1354,7 @@ EXPORTS
 ?DSPlayMainBuffers@CSoundLibrary@@AAEXXZ 
 ?DamageType_enum@@3VCEntityPropertyEnumType@@A 
 ?DamageType_values@@3PAVCEntityPropertyEnumValue@@A 
+?DeActivate@CFullScreenEffects@@QAEX_N@Z 
 ?DebugDump@CObject3D@@QAEXXZ 
 ?DebugSave@CNetworkLibrary@@QAEXXZ 
 ?DeclareSymbol@CShell@@QAEXABVCTString@@PAX@Z 
@@ -1471,7 +1483,6 @@ EXPORTS
 ?EnableVertexArrayKeeping@CModelInstance@@SAXH@Z 
 ?End@CEntity@@QAEXXZ 
 ?EndDriver_D3D@CGfxLibrary@@AAEXXZ 
-?EndDriver_OGL@CGfxLibrary@@AAEXXZ 
 ?EndModelRenderingMask@@YAXXZ 
 ?EndModelRenderingView@@YAXH@Z 
 ?EndOfMessage@CNetworkMessage@@QAEHXZ 
@@ -1499,8 +1510,6 @@ EXPORTS
 ?ExpectKeyword_t@CTStream@@QAEXABVCTString@@@Z 
 ?Export@CTerrainEdgeMap@@QAEXABVCTFileName@@@Z 
 ?Export@CTerrainHeightMap@@QAEXABVCTFileName@@H@Z 
-?ExportMap@CTerrainUtils@@SAXABVCTFileName@@PAEJJ@Z 
-?ExportMap@CTerrainUtils@@SAXABVCTFileName@@PAGJJ@Z 
 ?ExportMask@CTerrainLayer@@QAEXABVCTFileName@@@Z 
 ?ExportSurfaceNumbersAndNames@CEditModel@@QAEXVCTFileName@@@Z 
 ?Export_t@CTextureData@@QAEXAAVCImageInfo@@J@Z 
@@ -1587,8 +1596,6 @@ EXPORTS
 ?ForceStopTranslation@CMovableEntity@@QAEXXZ 
 ?ForgetOldLevels@CSessionState@@QAEXXZ 
 ?FreeBuffer@CTStream@@QAEXXZ 
-?FreeDataArray@CTerrainUtils@@SAXAAV?$CTRDataArray@UTerrainTriangle@@@@@Z 
-?FreeDataArray@CTerrainUtils@@SAXAAV?$CTRDataArray@UTerrainVertex@@@@@Z 
 ?FreeEditBuffer@CTerrain@@SAXPAG@Z 
 ?FreeMemory@@YAXPAX@Z 
 ?FreeMemoryAligned@@YAXPAX@Z 
@@ -1714,6 +1721,7 @@ EXPORTS
 ?GetCurrentLOD@CTerrainTile@@QAEJXZ 
 ?GetCurrentMipBrushingFactor@CWorldRenderPrefs@@QAEMM@Z 
 ?GetCurrentWorld@CNetworkLibrary@@QAEAAVCTFileName@@XZ 
+?GetD3DObjectMonitor@CD3DObjectMonitor@@SAPAV1@XZ 
 ?GetData@CModelObject@@QAEPAVCModelData@@XZ 
 ?GetDepthSortOffset@CEntity@@UAEMXZ 
 ?GetDescription@CAnimSet@@UAE?AVCTString@@XZ 
@@ -1869,6 +1877,7 @@ EXPORTS
 ?GetLerpedEntityTime@CMovableEntity@@QAEMXZ 
 ?GetLerpedPlacement@CEntity@@UBE?AVCPlacement3D@@XZ 
 ?GetLerpedPlacement@CMovableEntity@@UBE?AVCPlacement3D@@XZ 
+?GetLevelBriefingSoundFilename@CWorld@@QAE?AVCTString@@XZ 
 ?GetLightAmbient@CLightSource@@QBEKXZ 
 ?GetLightAmbient@CLightSource@@QBEXAAE00@Z 
 ?GetLightColor@CLightSource@@QBEKXZ 
@@ -1898,6 +1907,8 @@ EXPORTS
 ?GetMaxPlayers@CEntity@@SAJXZ 
 ?GetMaxTessellationLevel@CEntity@@UAEMXZ 
 ?GetMaximumVisibility@CTerrain@@QAEMXZ 
+?GetMinimapPictureFilename@CWorld@@QAE?AVCTString@@XZ 
+?GetMinimapValues@CWorld@@QAEXAAM0000000@Z 
 ?GetMinimumRenderRange@CWorldRenderPrefs@@QAEMXZ 
 ?GetMipCt@CEditModel@@QAEJXZ 
 ?GetMipDistance@CBrushMip@@QAEMXZ 
@@ -2158,6 +2169,7 @@ EXPORTS
 ?GetWindVector@CTerrainWindMap@@QAEXJJAAV?$Vector@M$02@@@Z 
 ?GetWindowsError@@YA?BVCTString@@K@Z 
 ?GetWorld@CEntity@@QAEPAVCWorld@@XZ 
+?GetWorldConfigFilename@CWorld@@QAE?AVCTString@@XZ 
 ?GetWorldPolygonIndex@CEntity@@QAEJPAVCBrushPolygon@@@Z 
 ?GetWorldPolygonPointer@CEntity@@QAEPAVCBrushPolygon@@J@Z 
 ?GetWorldState@CEntity@@QAEPAV1@XZ 
@@ -2221,8 +2233,6 @@ EXPORTS
 ?IgnoreContents@CNetworkMessage@@QAEXXZ 
 ?Import@CTerrainEdgeMap@@QAEXABVCTFileName@@@Z 
 ?Import@CTerrainHeightMap@@QAEXABVCTFileName@@@Z 
-?ImportMap@CTerrainUtils@@SAXABVCTFileName@@PAEJJ@Z 
-?ImportMap@CTerrainUtils@@SAXABVCTFileName@@PAGJJ@Z 
 ?ImportMask@CTerrainLayer@@QAEXABVCTFileName@@@Z 
 ?InEditor@CSettingsController@@QAE_NXZ 
 ?IncreaseShadowQuality@CModelRenderPrefs@@QAEXXZ 
@@ -2250,10 +2260,8 @@ EXPORTS
 ?InitCloned@CDrawPort@@QAEXPAV1@NNNN@Z 
 ?InitCollisionGrid@CWorld@@QAEXXZ 
 ?InitContext_D3D@CGfxLibrary@@AAEXXZ 
-?InitContext_OGL@CGfxLibrary@@AAEXXZ 
 ?InitDisplay_D3D@CGfxLibrary@@AAEHJJJW4DisplayDepth@@@Z 
 ?InitDriver_D3D@CGfxLibrary@@AAEHXZ 
-?InitDriver_OGL@CGfxLibrary@@AAEHH@Z 
 ?InitExceptionHandler@@YAXXZ 
 ?InitServerNetProcess@CServer@@QAEXXZ 
 ?InitTexture@CDrawPort@@QBEXPAVCTextureObject@@HK@Z 
@@ -2301,6 +2309,7 @@ EXPORTS
 ?Invalidate@CUpdateableRT@@QAEXXZ 
 ?Inverse@CObject3D@@QAEXXZ 
 ?IsActionApplied@CMovableEntity@@UAEHXZ 
+?IsActive@CFullScreenEffects@@QAE_NXZ 
 ?IsActive@CPlayerSource@@QAEHXZ 
 ?IsActive@CSoundLibrary@@QAEHXZ 
 ?IsActive@CWaitingRoom@@QAE_NXZ 
@@ -2444,6 +2453,7 @@ EXPORTS
 ?IsWhite@@YAHK@Z 
 ?IsWideScreen@CDisplayMode@@QAEHXZ 
 ?IsWideScreen@CDrawPort@@QAEHXZ 
+?IsWideScreen@CFullScreenEffects@@QAE_NXZ 
 ?IsWriteable@CTFileStream@@UAEHXZ 
 ?IsWriteable@CTMemoryStream@@UAEHXZ 
 ?IterationHead@CListHead@@QBEAAVCListNode@@XZ 
@@ -2649,6 +2659,7 @@ EXPORTS
 ?OffSetAnimationQueue@CEntity@@QAEXMJ@Z 
 ?OffSetAnimationQueue@CModelInstance@@QAEXM@Z 
 ?OffsetPhase@CAnimObject@@QAEXM@Z 
+?OnApply@?$CObjectSetting@VCTerrain@@@@MBEXPBVCOption@@@Z 
 ?OnApply@CSetting@@MBEXPBVCOption@@@Z 
 ?OnCreation@CEntity@@UAEXXZ 
 ?OnDisable@CInputDevice@@MAEXXZ 
@@ -2734,6 +2745,7 @@ EXPORTS
 ?PostClip@CSimpleProjection3D@@UBEXABV?$Vector@M$02@@MAAV2@AAM@Z 
 ?PostMoving@CMovableEntity@@UAEXXZ 
 ?PostMoving@CRationalEntity@@UAEXXZ 
+?PostRenderParticles@CEntity@@UAEXXZ 
 ?PreClip@CIsometricProjection3D@@UBEXABV?$Vector@M$02@@AAV2@@Z 
 ?PreClip@CParallelProjection3D@@UBEXABV?$Vector@M$02@@AAV2@@Z 
 ?PreClip@CPerspectiveProjection3D@@UBEXABV?$Vector@M$02@@AAV2@@Z 
@@ -2785,6 +2797,7 @@ EXPORTS
 ?ProcessGameStreamBlock@CSessionState@@QAEXAAVCNetworkMessage@@@Z 
 ?ProcessGameTick@CSessionState@@QAEXAAVCNetworkMessage@@M@Z 
 ?ProcessScript_t@@YAXABVCTFileName@@@Z 
+?ProduceReport@CD3DObjectMonitor@@AAEXXZ 
 ?ProgresRoutines@@3VCProgressRoutines@@A 
 ?Project@CIsometricProjection3D@@UBEXABV?$Plane@M$02@@AAV2@@Z 
 ?Project@CObject3D@@QAEXAAVCSimpleProjection3D_DOUBLE@@@Z 
@@ -2835,6 +2848,7 @@ EXPORTS
 ?REG_GetLong@@YAHABVCTString@@AAK@Z 
 ?REG_GetString@@YAHABVCTString@@AAV1@@Z 
 ?REG_SetString@@YAHABVCTString@@0@Z 
+?REPORT_FILENAME@CD3DObjectMonitor@@0PBDB 
 ?RM_AddFlag@@YAXK@Z 
 ?RM_AddSimpleShadow_View@@YAXAAVCModelInstance@@MABV?$Plane@M$02@@@Z 
 ?RM_AreHardwareShadersAvailable@@YAHXZ 
@@ -3038,6 +3052,7 @@ EXPORTS
 ?ReduceShadows@CGfxLibrary@@QAEXXZ 
 ?Regenerate@CTerrain@@QAEX_N@Z 
 ?RegisterCVars@CInput@@AAEXXZ 
+?RegisterObject@?$CObjectSetting@VCTerrain@@@@QAEXPBVCTerrain@@@Z 
 ?RegisterOption@CSetting@@QAEXPBVCOption@@_N@Z 
 ?RegisterSetting@CSettingsController@@QAEXPBVCSetting@@@Z 
 ?RegisterTerrainHole@CWorld@@QAEXPAVCEntity@@ABV?$AABBox@M$02@@0@Z 
@@ -3051,6 +3066,7 @@ EXPORTS
 ?RelativeToAbsoluteSmooth@CPlacement3D@@QAEXABV1@@Z 
 ?RelativeToRelative@CPlacement3D@@QAEXABV1@0@Z 
 ?RelativeToRelativeSmooth@CPlacement3D@@QAEXABV1@0@Z 
+?Release@CD3DObjectMonitor@@QAEKPAUIUnknown@@@Z 
 ?Release@CEntityComponent@@QAEXXZ 
 ?Release@CStock_CAnimData@@QAEXPAVCAnimData@@@Z 
 ?Release@CStock_CAnimSet@@QAEXPAVCAnimSet@@@Z 
@@ -3134,7 +3150,6 @@ EXPORTS
 ?RenderModel_Mask@CModelObject@@AAEXAAVCRenderModel@@@Z 
 ?RenderModel_View@CModelObject@@AAEXAAVCRenderModel@@@Z 
 ?RenderParticles@CEntity@@UAEXXZ 
-?RenderPatches_View@CModelObject@@AAEXAAVCRenderModel@@@Z 
 ?RenderPoints@CTerrainRenderer@@AAEXAAV?$vector@PAVCTerrainTile@@V?$allocator@PAVCTerrainTile@@@_STL@@@_STL@@@Z 
 ?RenderQuadTree@CTerrainRenderer@@AAEXXZ 
 ?RenderShadow@CModelObject@@QAEXAAVCRenderModel@@ABVCPlacement3D@@MMMABV?$Plane@M$02@@@Z 
@@ -3147,8 +3162,6 @@ EXPORTS
 ?Reoptimize@CBrushMip@@QAEXXZ 
 ?ReplaceSubstr@CTString@@QAEHABV1@0@Z 
 ?Report@CProfileForm@@QAEXAAVCTString@@@Z 
-?RequestDataArray@CTerrainUtils@@SAXAAV?$CTRDataArray@UTerrainTriangle@@@@JK@Z 
-?RequestDataArray@CTerrainUtils@@SAXAAV?$CTRDataArray@UTerrainVertex@@@@JK@Z 
 ?RequestFullGameState@CSessionState@@QAEXXZ 
 ?RequestFullStatusUpdate@CWaitingRoom@@QAEXXZ 
 ?RequestPlayerEntitiesToAdd@CWaitingRoom@@QAEXXZ 
@@ -3291,7 +3304,6 @@ EXPORTS
 ?SetCurrentView@CTerrainRenderer@@QAEXPAVCRenderer@@AAVCAnyProjection3D@@PAVCDrawPort@@@Z 
 ?SetCurrentViewport@CGfxLibrary@@QAEHPAVCViewPort@@@Z 
 ?SetCurrentViewport_D3D@CGfxLibrary@@AAEHPAVCViewPort@@@Z 
-?SetCurrentViewport_OGL@CGfxLibrary@@AAEHPAVCViewPort@@@Z 
 ?SetCutsceneRunning@CWorld@@QAEX_N@Z 
 ?SetData@CAnimObject@@QAEXPAVCAnimData@@@Z 
 ?SetData@CModelObject@@QAEXPAVCModelData@@@Z 
@@ -3366,6 +3378,7 @@ EXPORTS
 ?SetLerp2@CTimer@@QAEXM@Z 
 ?SetLerp@CTimer@@QAEXM@Z 
 ?SetLerpFactor@CSessionState@@QAEXVCTimerValue@@@Z 
+?SetLevelBriefingSoundFilename@CWorld@@QAEXABVCTString@@@Z 
 ?SetLightSource@CLightSource@@QAEXABV1@@Z 
 ?SetLightSourceWithNoDiscarding@CLightSource@@QAEXABV1@@Z 
 ?SetLineSpacing@CFontData@@QAEXJ@Z 
@@ -3377,6 +3390,8 @@ EXPORTS
 ?SetManualMipLevel@CModelObject@@QAEXJ@Z 
 ?SetMatrix@CTerrainMap@@QAEXAAY0M@$$CBM@Z 
 ?SetMaximumVisibility@CTerrain@@QAEXM@Z 
+?SetMinimapPictureFilename@CWorld@@QAEXABVCTString@@@Z 
+?SetMinimapValues@CWorld@@QAEXABM0000000@Z 
 ?SetMinimumRenderRange@CWorldRenderPrefs@@QAEXM@Z 
 ?SetMipDistance@CBrushMip@@QAEXM@Z 
 ?SetMipSwitchFactor@CModelObject@@QAEXJM@Z 
@@ -3498,9 +3513,9 @@ EXPORTS
 ?SetVisible@CTerrainTile@@QAEX_N@Z 
 ?SetVolume@CSoundObject@@QAEXMH@Z 
 ?SetWire@CModelRenderPrefs@@QAEXH@Z 
+?SetWorldConfigFilename@CWorld@@QAEXABVCTString@@@Z 
 ?SetupGraphics@CTerrainRenderer@@AAEXXZ 
 ?SetupModelRendering@CModelObject@@QAEXAAVCRenderModel@@@Z 
-?SetupPixelFormat_OGL@CGfxLibrary@@AAEHPAUHDC__@@H@Z 
 ?ShowAllEntities@CWorld@@QAEXXZ 
 ?ShowAllSectors@CWorld@@QAEXXZ 
 ?ShowPatch@CModelObject@@QAEXJ@Z 
@@ -3590,10 +3605,6 @@ EXPORTS
 ?TanFast@@YAMM@Z 
 ?Teleport@CEntity@@QAEXABVCPlacement3D@@H@Z 
 ?TerrainChangeNotify@CEntity@@QAEXXZ 
-?TerrainMapCopy@CTerrainUtils@@SAXPAEJJ0JJE@Z 
-?TerrainMapCopy@CTerrainUtils@@SAXPAGJJ0JJG@Z 
-?TerrainMapCrop@CTerrainUtils@@SAXPAEJJ0JJE@Z 
-?TerrainMapCrop@CTerrainUtils@@SAXPAGJJ0JJG@Z 
 ?TestBoxToFrustum@CIsometricProjection3D@@UBEJABV?$OBBox@M@@@Z 
 ?TestBoxToFrustum@CParallelProjection3D@@UBEJABV?$OBBox@M@@@Z 
 ?TestBoxToFrustum@CPerspectiveProjection3D@@UBEJABV?$OBBox@M@@@Z 
@@ -3601,7 +3612,6 @@ EXPORTS
 ?TestBreathing@CMovableEntity@@QAEXAAVCContentType@@@Z 
 ?TestBrushSector@CCastRay@@QAEXPAVCBrushSector@@@Z 
 ?TestContentDamage@CMovableEntity@@QAEXAAVCContentType@@M@Z 
-?TestExtension_OGL@CGfxLibrary@@AAEXKPBD@Z 
 ?TestFields@CMovableEntity@@QAEXAAJ0AAM@Z 
 ?TestModel@CCastRay@@QAEXPAVCEntity@@@Z 
 ?TestModelCollisionBox@CCastRay@@QAEXPAVCEntity@@@Z 
@@ -3693,6 +3703,7 @@ EXPORTS
 ?UnpackVertex@CModelObject@@QAEXJJAAV?$Vector@M$02@@@Z 
 ?UnpackVertices@CTerrainRenderer@@AAEXPAVCTerrainTile@@@Z 
 ?Unprepare@CCommunicationInterface@@QAEXXZ 
+?UnregisterObject@?$CObjectSetting@VCTerrain@@@@QAEXPBVCTerrain@@@Z 
 ?UnregisterTerrainHole@CWorld@@QAEXPAVCEntity@@@Z 
 ?UnsetTimer@CEntity@@QAEXXZ 
 ?UnsetTimer@CRationalEntity@@QAEXXZ 
@@ -3899,6 +3910,7 @@ EXPORTS
 ?_fnmApplicationExe@@3VCTFileName@@A 
 ?_fnmApplicationPath@@3VCTFileName@@A 
 ?_fnmCDPath@@3VCTFileName@@A 
+?_fnmDefaultWorldconfig@@3VCTFileName@@A 
 ?_fnmMod@@3VCTFileName@@A 
 ?_iStatsMode@@3JA 
 ?_iTexForcedQuality@@3JA 
@@ -3909,6 +3921,7 @@ EXPORTS
 ?_pConsole@@3PAVCConsole@@A 
 ?_pEntityClassStock@@3PAVCStock_CEntityClass@@A 
 ?_pFontStock@@3PAVCStock_CFontData@@A 
+?_pFullScreenEffects@@3PAVCFullScreenEffects@@A 
 ?_pGfx@@3PAVCGfxLibrary@@A 
 ?_pInput@@3PAVCInput@@A 
 ?_pMeshStock@@3PAVCStock_CMesh@@A 
@@ -3961,6 +3974,7 @@ EXPORTS
 ?dbg_bAtHome@@3JA 
 ?gam_iPrecachePolicy@@3JA 
 ?gfxSetBlendType@@YAXW4PredefinedBlendType@@@Z 
+?mInstance@CD3DObjectMonitor@@0PAV1@A 
 ?net_bLocalPrediction@@3JA 
 ?sectorCount@CCastRay@@2KA 
 ?settingsController@CSettingsControllerPtr@@2PAVCSettingsController@@A 
