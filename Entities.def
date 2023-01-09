@@ -587,6 +587,7 @@ EXPORTS
 ?CheatsEnabled@CPlayer@@QAEHXZ 
 ?CheckAnotherPlayer@CWatcher@@QAEPAVCEntity@@PAV2@@Z 
 ?CheckCloserPlayer@CWatcher@@QAEPAVCEntity@@PAV2@M@Z 
+?CheckDeathForRespawnInPlace@CPlayer@@QAEXVEDeath@@@Z 
 ?CheckFallForPathFinding@CEnemyBase@@QAEHABVEWouldFall@@@Z 
 ?CheckGameEnd@CPlayer@@QAEXXZ 
 ?CheckHighScore@CPlayer@@QAEXXZ 

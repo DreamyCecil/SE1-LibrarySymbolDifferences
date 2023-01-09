@@ -2390,6 +2390,7 @@ EXPORTS
 ?TriangularizeForVertices@CWorld@@QAEXAAV?$CSelection@VCBrushVertex@@$01@@@Z 
 ?TriangularizeMarkedPolygons@CBrushSector@@QAEXXZ 
 ?TriangularizePolygon@CBrushSector@@QAEXPAVCBrushPolygon@@@Z 
+?TriangularizePolygons@CWorld@@QAEXAAV?$CDynamicContainer@VCBrushPolygon@@@@@Z 
 ?Triangulate@CBrushPolygon@@QAEXXZ 
 ?Triangulate@CBrushSector@@QAEXXZ 
 ?TrimLeft@CTString@@QAEJJ@Z 
@@ -2562,6 +2563,8 @@ EXPORTS
 ?_sfStats@@3VCStatForm@@A 
 ?_strEngineBuild@@3VCTString@@A 
 ?_strLogFile@@3VCTString@@A 
+?_strModExt@@3VCTString@@A 
+?_strModName@@3VCTString@@A 
 ?_toSimpleModelShadow@@3VCTextureObject@@A 
 ?_tpGlobal@@3VCTexParams@@A 
 ?_ulEngineBuildMajor@@3KA 
@@ -2572,6 +2575,7 @@ EXPORTS
 ?gam_iPrecachePolicy@@3JA 
 ?snd_iFormat@@3JA 
 ?tmp_af@@3PAMA 
+?tmp_ai@@3PAJA 
 CEntity_DLLClass 
 CLiveEntity_DLLClass 
 CMovableBrushEntity_DLLClass 
