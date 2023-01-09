@@ -2,13 +2,19 @@ LIBRARY SHADERS
 EXPORTS 
 Shader_Add 
 Shader_Base 
+Shader_BaseCG 
+Shader_BaseMulti 
 Shader_BasePPL_Abs 
 Shader_Base_Transparent 
+Shader_CGCartoon 
 Shader_Color 
 Shader_Desc_Add 
 Shader_Desc_Base 
+Shader_Desc_BaseCG 
+Shader_Desc_BaseMulti 
 Shader_Desc_BasePPL_Abs 
 Shader_Desc_Base_Transparent 
+Shader_Desc_CGCartoon 
 Shader_Desc_Color 
 Shader_Desc_Detail 
 Shader_Desc_Detail_Specular 
@@ -19,6 +25,7 @@ Shader_Desc_MultiLayer
 Shader_Desc_Reflection 
 Shader_Desc_ReflectionAndSpecular 
 Shader_Desc_Specular 
+Shader_Desc_Toon 
 Shader_Desc_Translucent 
 Shader_Detail 
 Shader_Detail_Specular 
@@ -28,6 +35,7 @@ Shader_LavaDisplace
 Shader_MultiLayer 
 Shader_PPCode_Add 
 Shader_PPCode_Base 
+Shader_PPCode_BaseMulti 
 Shader_PPCode_BasePPL_Abs 
 Shader_PPCode_Base_Transparent 
 Shader_PPCode_Color 
@@ -40,12 +48,15 @@ Shader_PPCode_MultiLayer
 Shader_PPCode_Reflection 
 Shader_PPCode_ReflectionAndSpecular 
 Shader_PPCode_Specular 
+Shader_PPCode_Toon 
 Shader_Reflection 
 Shader_ReflectionAndSpecular 
 Shader_Specular 
+Shader_Toon 
 Shader_Translucent 
 Shader_VPCode_Add 
 Shader_VPCode_Base 
+Shader_VPCode_BaseMulti 
 Shader_VPCode_BasePPL_Abs 
 Shader_VPCode_Base_Transparent 
 Shader_VPCode_Color 
@@ -58,3 +69,4 @@ Shader_VPCode_MultiLayer
 Shader_VPCode_Reflection 
 Shader_VPCode_ReflectionAndSpecular 
 Shader_VPCode_Specular 
+Shader_VPCode_Toon 
