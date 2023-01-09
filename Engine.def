@@ -340,6 +340,8 @@ EXPORTS
 ??0CRelationDst@@QAE@XZ 
 ??0CRelationSrc@@QAE@XZ 
 ??0CRenderModel@@QAE@XZ 
+??0CSave3DS@@QAE@AAV0@@Z 
+??0CSave3DS@@QAE@XZ 
 ??0CSerial@@QAE@ABV0@@Z 
 ??0CSerial@@QAE@XZ 
 ??0CServer@@QAE@ABV0@@Z 
@@ -607,6 +609,7 @@ EXPORTS
 ??1CRelationDst@@QAE@XZ 
 ??1CRelationSrc@@QAE@XZ 
 ??1CRenderModel@@QAE@XZ 
+??1CSave3DS@@QAE@XZ 
 ??1CSerial@@UAE@XZ 
 ??1CServer@@QAE@XZ 
 ??1CSessionState@@QAE@XZ 
@@ -834,6 +837,7 @@ EXPORTS
 ??4CProjection3D@@QAEAAV0@ABV0@@Z 
 ??4CRationalEntity@@QAEAAV0@AAV0@@Z 
 ??4CRenderModel@@QAEAAV0@ABV0@@Z 
+??4CSave3DS@@QAEAAV0@AAV0@@Z 
 ??4CSerial@@QAEAAV0@ABV0@@Z 
 ??4CServer@@QAEAAV0@ABV0@@Z 
 ??4CSessionState@@QAEAAV0@ABV0@@Z 
@@ -1150,7 +1154,7 @@ EXPORTS
 ?AddNetGraphValue@CNetworkLibrary@@QAEXW4NetGraphEntryType@@M@Z 
 ?AddObjectToBrush@CWorld@@QAEXAAVCObject3D@@AAVCEntity@@@Z 
 ?AddParticle@CPGroup@@QAEXABVCParticle@@@Z 
-?AddPlayer@CSessionState@@QAEXJAAVCPlayerCharacter@@AAK111J@Z 
+?AddPlayer@CSessionState@@QAEXJAAVCPlayerCharacter@@AAK11111J@Z 
 ?AddPlayerUpdate@CServer@@QAEHJAAV?$Vector@M$02@@H@Z 
 ?AddPlayer_t@CNetworkLibrary@@QAEPAVCPlayerSource@@AAVCPlayerCharacter@@@Z 
 ?AddPosition@CLastPositions@@QAEXABV?$Vector@M$02@@@Z 
@@ -1347,6 +1351,7 @@ EXPORTS
 ?CheckWithIn@CPDTriangle@@UBE_NABV?$Vector@M$02@@@Z 
 ?ClampMipLevel@CTextureData@@QBEJM@Z 
 ?ClampTextureSize@@YAJJJJJ@Z 
+?CleanUp@CSave3DS@@AAEXXZ 
 ?Clear@CAnimData@@UAEXXZ 
 ?Clear@CAnimSet@@UAEXXZ 
 ?Clear@CAttachedModel@@QAEXXZ 
@@ -1565,6 +1570,7 @@ EXPORTS
 ?CreateWindowCanvas@CGfxLibrary@@QAEXPAXPAPAVCViewPort@@PAPAVCDrawPort@@@Z 
 ?CreateWorkCanvas@CGfxLibrary@@QAEXJJPAPAVCDrawPort@@@Z 
 ?Create_t@CTFileStream@@QAEXABVCTFileName@@W4CreateMode@CTStream@@@Z 
+?Create_t@CTextureData@@QAEXABVCTFileName@@@Z 
 ?Create_t@CTextureData@@QAEXPBVCImageInfo@@JJK@Z 
 ?CurrentTick@CTimer@@QBE?BMXZ 
 ?DSFail@CSoundLibrary@@AAEHPAD@Z 
@@ -1683,6 +1689,7 @@ EXPORTS
 ?Dummy@CPlayerEntity@@QAEHABVCEntityEvent@@@Z 
 ?Dump@CNetworkMessage@@QAEXXZ 
 ?DumpCurrentStack@@YAXPAVCTFileStream@@@Z 
+?DumpObjects@CSave3DS@@AAEHPAU_iobuf@@@Z 
 ?DumpReferenceInfo@CWorld@@QAEXPAVCEntity@@@Z 
 ?DumpStats@CServer@@QAEXXZ 
 ?DumpToConsole@CPlayerEntity@@UAEXXZ 
@@ -1727,6 +1734,7 @@ EXPORTS
 ?ExpectID_t@CTStream@@QAEXABVCChunkID@@@Z 
 ?ExpectKeyword_t@CTStream@@QAEXABVCTString@@@Z 
 ?Explosion@CPGroup@@QAEXV?$Vector@M$02@@MMMMM@Z 
+?Export3DS@CSave3DS@@QAE_NAAVCWorld@@VCTString@@@Z 
 ?ExportSurfaceNumbersAndNames@CEditModel@@QAEXVCTFileName@@@Z 
 ?Export_t@CTextureData@@QAEXAAVCImageInfo@@J@Z 
 ?ExtractSubMessage@CNetworkMessage@@QAEXAAV1@@Z 
@@ -1791,6 +1799,7 @@ EXPORTS
 ?Flush@CSoundLibrary@@QAEXXZ 
 ?FlushRenderingQueue@CDrawPort@@QBEXXZ 
 ?Follow@CPGroup@@QAEXMMM@Z 
+?ForMusicHolder@CEntity@@UAEXM@Z 
 ?Force@CTextureData@@QAEXK@Z 
 ?ForceCollisionBoxIndexChange@CMovableModelEntity@@QAEXJ@Z 
 ?ForceFullStop@CMovableEntity@@QAEXXZ 
@@ -2020,6 +2029,7 @@ EXPORTS
 ?GetExistingPatchesMask@CEditModel@@QAEKXZ 
 ?GetFLOAT@CShell@@QAEMABVCTString@@@Z 
 ?GetFPUPrecision@@YA?AW4FPUPrecisionType@@XZ 
+?GetFaceNum@CSave3DS@@AAEGXZ 
 ?GetFieldSettings@CEntity@@UAEPAVCFieldSettings@@XZ 
 ?GetFileCRC32_t@@YAKABVCTFileName@@@Z 
 ?GetFileTimeStamp_t@@YAJABVCTFileName@@@Z 
@@ -2300,6 +2310,7 @@ EXPORTS
 ?GetVertexCoordinatesPreciseAbsolute@CBrushPolygonEdge@@QAEXAAV?$Vector@N$02@@0@Z 
 ?GetVertexCoordinatesPreciseRelative@CBrushPolygonEdge@@QAEXAAV?$Vector@N$02@@0@Z 
 ?GetVertexCoordinatesRelative@CBrushPolygonEdge@@QAEXAAV?$Vector@M$02@@0@Z 
+?GetVertexNum@CSave3DS@@AAEGXZ 
 ?GetVertices@CBrushPolygonEdge@@QAEXAAPAVCBrushVertex@@0@Z 
 ?GetVertices@CObjectPolygonEdge@@QAEXAAPAVCObjectVertex@@0@Z 
 ?GetVerticesFillType@CWorldRenderPrefs@@QAE?AW4FillType@1@XZ 
@@ -2416,7 +2427,7 @@ EXPORTS
 ?Initialize@CShadowMap@@QAEXJJJJJ@Z 
 ?Initialize@CShell@@QAEXXZ 
 ?InitializeFromNet@CEntity@@UAEXXZ 
-?InitializePlayer@CPlayerEntity@@QAEXKKK@Z 
+?InitializePlayer@CPlayerEntity@@QAEXKKKKK@Z 
 ?InitializeShadowMap@CBrushPolygon@@QAEXXZ 
 ?Initialize_internal@CEntity@@QAEXABVCEntityEvent@@@Z 
 ?InsertChar@CTString@@QAEXJD@Z 
@@ -2445,6 +2456,7 @@ EXPORTS
 ?IsBackgroundTextureOn@CWorldRenderPrefs@@QAEHXZ 
 ?IsBigger@@YAHKK@Z 
 ?IsBlack@@YAHK@Z 
+?IsBoosterJumping@CMovableEntity@@UAEHXZ 
 ?IsCharDefined@CFontData@@QBEHD@Z 
 ?IsCompressed@CTextureData@@QAEHXZ 
 ?IsConnectionStable@CNetworkLibrary@@QAEHXZ 
@@ -2550,6 +2562,7 @@ EXPORTS
 ?IsValid@CListNode@@QBEHXZ 
 ?IsValidDouble@@YAHN@Z 
 ?IsValidFloat@@YAHM@Z 
+?IsVertexExist@CSave3DS@@AAEHV?$Vector@M$02@@@Z 
 ?IsViewerPlaneVisible@CIsometricProjection3D@@UBEHABV?$Plane@M$02@@@Z 
 ?IsViewerPlaneVisible@CParallelProjection3D@@UBEHABV?$Plane@M$02@@@Z 
 ?IsViewerPlaneVisible@CPerspectiveProjection3D@@UBEHABV?$Plane@M$02@@@Z 
@@ -2585,6 +2598,7 @@ EXPORTS
 ?LastUpdateTime@CUpdateableRT@@QBEMXZ 
 ?LaunchAsFreeProjectile@CMovableEntity@@QAEXABV?$Vector@M$02@@PAV1@@Z 
 ?LaunchAsPropelledProjectile@CMovableEntity@@QAEXABV?$Vector@M$02@@PAV1@@Z 
+?LaunchProjectile_type1@CMovableEntity@@QAEXABV?$Vector@M$02@@PAV1@@Z 
 ?Length@CTString@@QBEJXZ 
 ?Length@CTWString@@QBEJXZ 
 ?LengthNaked@CTString@@QBEJXZ 
@@ -2602,6 +2616,7 @@ EXPORTS
 ?LoadFromScript_t@CAnimData@@QAEXPAVCTStream@@PAVCListHead@@@Z 
 ?LoadFromScript_t@CEditModel@@QAEXAAVCTFileName@@@Z 
 ?LoadIntVar@@YAXABVCTFileName@@AAJ@Z 
+?LoadJpg_t@CImageInfo@@AAEXABVCTFileName@@@Z 
 ?LoadKeepCRLF_t@CTString@@QAEXABVCTFileName@@@Z 
 ?LoadMapping_t@CEditModel@@QAEXVCTFileName@@J@Z 
 ?LoadModelAnimationData_t@CEditModel@@AAEXPAVCTStream@@ABV?$Matrix@M$02$02@@@Z 
@@ -2666,6 +2681,7 @@ EXPORTS
 ?MakeRotationMatrixFast@@YAXAAV?$Matrix@M$02$02@@ABV?$Vector@M$02@@@Z 
 ?MakeShadowMap@CBrushPolygon@@QAEXPAVCWorld@@H@Z 
 ?MakeSubMipmap@@YAXPAK0J@Z 
+?MakeVertexList@CSave3DS@@AAEXXZ 
 ?MakeWideScreen@CDrawPort@@QAEXPAV1@@Z 
 ?Make_t@CFontData@@QAEXABVCTFileName@@JJAAV2@H@Z 
 ?MarkChanged@CChangeable@@QAEXXZ 
@@ -2940,7 +2956,7 @@ EXPORTS
 ?RM_BeginRenderingView@@YAXAAVCAnyProjection3D@@PAVCDrawPort@@@Z 
 ?RM_EndModelRenderingMask@@YAXXZ 
 ?RM_EndRenderingView@@YAXH@Z 
-?RM_FindRenBone@@YAPAURenBone@@J@Z 
+?RM_FindRenBone@@YAPAURenBone@@JPBVCModelInstance@@@Z 
 ?RM_GetAdjustedMipDistance@@YAMMM@Z 
 ?RM_GetBoneAbsPosition@@YAHAAVCModelInstance@@JAAV?$Vector@M$02@@1PBV1@@Z 
 ?RM_GetBoneAbsPositionSafe@@YAHAAVCModelInstance@@JAAV?$Vector@M$02@@1@Z 
@@ -2984,7 +3000,7 @@ EXPORTS
 ?RayThroughPoint@CSimpleProjection3D@@UBEXABV?$Vector@M$02@@AAVCPlacement3D@@@Z 
 ?ReTriple@CBrushSector@@QAEXAAV?$CSelection@VCBrushPolygon@@$0BAA@@@@Z 
 ?Read@CNetworkMessage@@QAEXPAXJ@Z 
-?ReadAddPlayer@CEntityMessage@@QAEXAAKAAJAAVCPlayerCharacter@@0001@Z 
+?ReadAddPlayer@CEntityMessage@@QAEXAAKAAJAAVCPlayerCharacter@@000001@Z 
 ?ReadAddSkaString@CEntityMessage@@QAEXAAJAAVCTString@@@Z 
 ?ReadBasePosition@CEntityMessage@@QAEXAAV?$Vector@M$02@@@Z 
 ?ReadBits@CNetworkMessage@@QAEXPAXJ@Z 
@@ -3176,7 +3192,7 @@ EXPORTS
 ?RemoveSkeletonLod@CSkeleton@@QAEXPAUSkeletonLOD@@@Z 
 ?RemoveSpecialCodes@@YA?AVCTString@@ABV1@@Z 
 ?RemoveTexture@CModelInstance@@QAEXPAUTextureInstance@@PAUMeshInstance@@@Z 
-?RenderGameView@CEntity@@UAEXPAVCDrawPort@@PAX@Z 
+?RenderGameView@CEntity@@UAEXPAVCDrawPort@@PAXH@Z 
 ?RenderLensFlare@CDrawPort@@QBEXPAVCTextureObject@@MMMMMK@Z 
 ?RenderModel@CModelObject@@QAEXAAVCRenderModel@@@Z 
 ?RenderModel_Mask@CModelObject@@AAEXAAVCRenderModel@@@Z 
@@ -3220,6 +3236,7 @@ EXPORTS
 ?STAT_Reset@@YAXXZ 
 ?SaveIncludeFile_t@CEditModel@@QAEXVCTFileName@@VCTString@@@Z 
 ?SaveIntVar@@YAXABVCTFileName@@AAJ@Z 
+?SaveJpg_t@CImageInfo@@QBEHABVCTFileName@@@Z 
 ?SaveKeepCRLF_t@CTString@@QAEXABVCTFileName@@@Z 
 ?SaveMapping_t@CEditModel@@QAEXVCTFileName@@J@Z 
 ?SaveStringVar@@YAXABVCTFileName@@AAVCTString@@@Z 
@@ -3850,7 +3867,7 @@ EXPORTS
 ?WouldFallInNextPosition@CMovableEntity@@QAEHXZ 
 ?Write@CNetworkMessage@@QAEXPBXJ@Z 
 ?WriteActionPacket@CPlayerSource@@QAEXAAVCNetworkMessage@@@Z 
-?WriteAddPlayer@CEntityMessage@@QAEXAAKAAJAAVCPlayerCharacter@@000J@Z 
+?WriteAddPlayer@CEntityMessage@@QAEXAAKAAJAAVCPlayerCharacter@@00000J@Z 
 ?WriteAddSkaString@CEntityMessage@@QAEXJABVCTString@@@Z 
 ?WriteBasePosition@CEntityMessage@@QAEXAAV?$Vector@M$02@@@Z 
 ?WriteBits@CNetworkMessage@@QAEXPBXJ@Z 
@@ -3865,6 +3882,7 @@ EXPORTS
 ?WriteEntityInitialize@CEntityMessage@@QAEXAAKAAJPAX1@Z 
 ?WriteEntityPointer_t@CEntity@@QAEXPAVCTStream@@VCEntityPointer@@@Z 
 ?WriteEntitySectorLinks_t@CBrushArchive@@QAEXAAVCTStream@@@Z 
+?WriteFaces@CSave3DS@@AAEHPAU_iobuf@@@Z 
 ?WriteFullChunk_t@CTStream@@QAEXABVCChunkID@@PAXJ@Z 
 ?WriteID_t@CTStream@@QAEXABVCChunkID@@@Z 
 ?WriteInfo_t@CWorld@@QAEXPAVCTStream@@@Z 
@@ -3872,6 +3890,7 @@ EXPORTS
 ?WriteLayers_t@CShadowMap@@UAEXPAVCTStream@@@Z 
 ?WriteMipSettings_t@CEditModel@@QAEXPAVCTStream@@J@Z 
 ?WriteModelInstance_t@@YAXAAVCTStream@@AAVCModelInstance@@H@Z 
+?WriteObject@CSave3DS@@AAEHPAU_iobuf@@@Z 
 ?WritePageToFile@CTFileStream@@QAEXJ@Z 
 ?WritePause@CEntityMessage@@QAEXAAHAAVCTString@@@Z 
 ?WritePlacement@CEntityMessage@@QAEXAAKABVCPlacement3D@@1@Z 
@@ -3896,6 +3915,7 @@ EXPORTS
 ?WriteStream_t@CTStream@@QAEXAAV1@@Z 
 ?WriteToStreamShort@CTString@@QAEXPAVCTStream@@@Z 
 ?WriteVersion_t@CNetworkLibrary@@QAEXAAVCTStream@@@Z 
+?WriteVertices@CSave3DS@@AAEHPAU_iobuf@@@Z 
 ?WriteWeaponUpdatePacket@CPlayerSource@@QAEXAAVCNetworkMessage@@@Z 
 ?WriteWorldAndState_t@CSessionState@@QAEXPAVCTStream@@@Z 
 ?Write_net@CPlayerEntity@@UAEXPAVCNetworkMessage@@@Z 
@@ -4023,6 +4043,8 @@ EXPORTS
 ?_wrpWorldRenderPrefs@@3VCWorldRenderPrefs@@A 
 ?crc_aulCRCTable@@3PAKA 
 ?dbg_bAtHome@@3JA 
+?dump_3dchunk@CSave3DS@@AAEHGPAU_iobuf@@PAX@Z 
+?dump_mchunk@CSave3DS@@AAEHGPAU_iobuf@@PAX@Z 
 ?evaluate@CDVWaveMod@@QBEMI@Z 
 ?evaluate@CubicSpline@@ABEMHMM@Z 
 ?evaluate@CubicSpline@@QBEMM@Z 
@@ -4031,6 +4053,10 @@ EXPORTS
 ?g_hEdgeFilterNormFP@@3KA 
 ?g_hEdgeFilterVP@@3KA 
 ?g_hEdgeFilterZFP@@3KA 
+?g_hShinePS@@3KA 
+?g_hShineVS@@3KA 
+?g_hTransitionPS@@3KA 
+?g_hTransitionVS@@3KA 
 ?gam_iPrecachePolicy@@3JA 
 ?gap_bOptimizeStateChanges@@3JA 
 ?gap_bUseOcclusionCulling@@3JA 
@@ -4152,12 +4178,14 @@ EXPORTS
 ?gfxUnlockArrays@@YAXXZ 
 ?gfxUnlockSubBuffer@@3P6AXJJ@ZA 
 ?gfxUploadTexture@@YAXPAKJJKH@Z 
+?gfx_bAnyShining@@3_NA 
 ?gfx_bMotionBlur@@3_NA 
 ?gfx_bNormZRender@@3_NA 
 ?gfx_bRenderFog@@3JA 
 ?gfx_bRenderParticles@@3JA 
 ?gfx_bRenderPlayerView@@3_NA 
 ?gfx_bRenderWorld@@3JA 
+?gfx_bShine@@3_NA 
 ?gfx_iBlurMode@@3JA 
 ?gfx_iEdgeMode@@3JA 
 ?gfx_iLensFlareQuality@@3JA 
@@ -4167,6 +4195,11 @@ EXPORTS
 ?init@CDVWaveMod@@QAE_NPADMMMM@Z 
 ?load@CDVBlendShader@@UAEXPBDAAV?$basic_istream@DU?$char_traits@D@std@@@std@@@Z 
 ?load@CDVScrollShader@@UAEXPBDAAV?$basic_istream@DU?$char_traits@D@std@@@std@@@Z 
+?ptdBlur_@@3PAVCTextureData@@A 
+?ptdGlow_@@3PAVCTextureData@@A 
+?ptdPushGunFX_@@3PAVCTextureData@@A 
+?ptdShineFX_@@3PAVCTextureData@@A 
+?ptdTransition_@@3PAVCTextureData@@A 
 ?rangeMax@CubicSpline@@QBEMXZ 
 ?rangeMin@CubicSpline@@QBEMXZ 
 ?read@CubicSpline@@QAEXPAVCTStream@@@Z 
@@ -4299,8 +4332,10 @@ EXPORTS
 ?texLogBegin@@YAXXZ 
 ?texLogEnd@@YAXXZ 
 ?texLogLevelName@@YAXPBD@Z 
+?tex_bAviFailure@@3_NA 
 ?tmp_af@@3PAMA 
 ?tmp_ai@@3PAJA 
+?tmp_bDebug@@3JA 
 ?tmp_fAdd@@3JA 
 ?tmp_i@@3JA 
 ?toString@CLogStats@@QBEXPAD@Z 
