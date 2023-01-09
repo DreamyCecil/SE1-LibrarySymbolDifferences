@@ -597,6 +597,8 @@ EXPORTS
 ?ChecksumForSync@CEnemyBase@@UAEXAAKJ@Z 
 ?ChecksumForSync@CPlayer@@UAEXAAKJ@Z 
 ?ClampAllAmmo@CPlayerWeapons@@QAEXXZ 
+?ClasificationBits_enum@@3VCEntityPropertyEnumType@@A 
+?ClasificationBits_values@@3PAVCEntityPropertyEnumValue@@A 
 ?Clear@CCompMessageID@@QAEXXZ 
 ?ClearShellLaunchData@CPlayer@@QAEXXZ 
 ?ClearToDefault@@YAXAAVEActivate@@@Z 
@@ -681,6 +683,7 @@ EXPORTS
 ?ClearToDefault@@YAXAAW4BullChar@@@Z 
 ?ClearToDefault@@YAXAAW4BulletHitType@@@Z 
 ?ClearToDefault@@YAXAAW4CannonBallType@@@Z 
+?ClearToDefault@@YAXAAW4ClasificationBits@@@Z 
 ?ClearToDefault@@YAXAAW4CustomShadingType@@@Z 
 ?ClearToDefault@@YAXAAW4DebrisParticlesType@@@Z 
 ?ClearToDefault@@YAXAAW4DestinationType@@@Z 
@@ -730,6 +733,7 @@ EXPORTS
 ?ClearToDefault@@YAXAAW4TouchOrDamageEvent@@@Z 
 ?ClearToDefault@@YAXAAW4TwisterSize@@@Z 
 ?ClearToDefault@@YAXAAW4ViewType@@@Z 
+?ClearToDefault@@YAXAAW4VisibilityBits@@@Z 
 ?ClearToDefault@@YAXAAW4WalkerChar@@@Z 
 ?ClearToDefault@@YAXAAW4WarpRotation@@@Z 
 ?ClearToDefault@@YAXAAW4WaterSize@@@Z 
@@ -2008,6 +2012,8 @@ EXPORTS
 ?ValidateCharacter@CPlayer@@QAEXXZ 
 ?ViewType_enum@@3VCEntityPropertyEnumType@@A 
 ?ViewType_values@@3PAVCEntityPropertyEnumValue@@A 
+?VisibilityBits_enum@@3VCEntityPropertyEnumType@@A 
+?VisibilityBits_values@@3PAVCEntityPropertyEnumValue@@A 
 ?WalkerChar_enum@@3VCEntityPropertyEnumType@@A 
 ?WalkerChar_values@@3PAVCEntityPropertyEnumValue@@A 
 ?WalkerRocket@CProjectile@@QAEXXZ 
