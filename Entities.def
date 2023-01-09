@@ -846,6 +846,7 @@ EXPORTS
 ?ClearToDefault@@YAXAAW4FogAttenuationType@@@Z 
 ?ClearToDefault@@YAXAAW4FogGraduationType2@@@Z 
 ?ClearToDefault@@YAXAAW4GravityType@@@Z 
+?ClearToDefault@@YAXAAW4GruntSkaType@@@Z 
 ?ClearToDefault@@YAXAAW4GruntType@@@Z 
 ?ClearToDefault@@YAXAAW4HeadmanType@@@Z 
 ?ClearToDefault@@YAXAAW4HealthItemType@@@Z 
@@ -866,6 +867,8 @@ EXPORTS
 ?ClearToDefault@@YAXAAW4ProjectileType@@@Z 
 ?ClearToDefault@@YAXAAW4ScorpmanType@@@Z 
 ?ClearToDefault@@YAXAAW4ShadowType@@@Z 
+?ClearToDefault@@YAXAAW4SkaCustomShadingType@@@Z 
+?ClearToDefault@@YAXAAW4SkaShadowType@@@Z 
 ?ClearToDefault@@YAXAAW4SoundType@@@Z 
 ?ClearToDefault@@YAXAAW4SprayParticlesType@@@Z 
 ?ClearToDefault@@YAXAAW4SwitchType@@@Z 
@@ -1042,6 +1045,7 @@ EXPORTS
 ?GetActionMarker@CPlayer@@QAEPAVCPlayerActionMarker@@XZ 
 ?GetAltWeapon@CPlayerWeapons@@QAE?AW4WeaponType@@W42@@Z 
 ?GetAmmo@CPlayerWeapons@@QAEJXZ 
+?GetAnimLength@CEnemyBase@@QAEMH@Z 
 ?GetAnimator@CPlayerWeapons@@QAEPAVCPlayerAnimator@@XZ 
 ?GetAttackMoveFrequency@CEnemyBase@@UAEMM@Z 
 ?GetBody@CPlayerAnimator@@QAEPAVCModelObject@@XZ 
@@ -1049,6 +1053,7 @@ EXPORTS
 ?GetChainSawTeeth@CPlayerWeapons@@QAEPAVCModelObject@@XZ 
 ?GetComputerMessageName@CEnemyBase@@UBEABVCTFileName@@XZ 
 ?GetCrushHealth@CEnemyBase@@UAEMXZ 
+?GetCurrentAnimLength@CEnemyBase@@QAEMXZ 
 ?GetDeathmatchStartMarker@CPlayer@@QAEPAVCEntity@@XZ 
 ?GetDescription@CEnemyBase@@UBEABVCTString@@XZ 
 ?GetDescription@CItem@@UBEABVCTString@@XZ 
@@ -1075,11 +1080,13 @@ EXPORTS
 ?GetLockRotationSpeed@CEnemyBase@@UAEMXZ 
 ?GetMaxAmmo@CPlayerWeapons@@QAEJXZ 
 ?GetModelForRendering@CPlayer@@UAEPAVCModelObject@@XZ 
+?GetModelStretch@CEnemyBase@@QAEAAV?$Vector@M$02@@XZ 
 ?GetName@CEnemyBase@@UBEABVCTString@@XZ 
 ?GetName@CItem@@UBEABVCTString@@XZ 
 ?GetName@CNavigationMarker@@UBEABVCTString@@XZ 
 ?GetName@CPathNode@@QAEABVCTString@@XZ 
 ?GetOwner@CWatcher@@QAEPAVCEnemyBase@@XZ 
+?GetPassedTime@CEnemyBase@@QAEMXZ 
 ?GetPathNode@CNavigationMarker@@QAEPAVCPathNode@@XZ 
 ?GetPlaneFrustumAngle@CEnemyBase@@QAEMABV?$Vector@M$02@@@Z 
 ?GetPlayer@CPlayerAnimator@@QAEPAVCPlayer@@XZ 
@@ -1123,6 +1130,9 @@ EXPORTS
 ?GetTarget@CNavigationMarker@@UBEPAVCEntity@@XZ 
 ?GetTeleportingOffset@CPlayer@@QAE?AV?$Vector@M$02@@XZ 
 ?GetThreatDistance@CEnemyBase@@UAEMXZ 
+?GetUsedMemory@CEnemyBase@@UAEJXZ 
+?GetUsedMemory@CItem@@UAEJXZ 
+?GetUsedMemory@CWatcher@@UAEJXZ 
 ?GetViewEntity@CPlayer@@QAEPAVCEntity@@XZ 
 ?GetWSC@@YAPAVCWorldSettingsController@@PAVCEntity@@@Z 
 ?GetWatcher@CEnemyBase@@QAEPAVCWatcher@@XZ 
@@ -1137,6 +1147,8 @@ EXPORTS
 ?GroundToAir@CEnemyFly@@QAEHABVCEntityEvent@@@Z 
 ?GroundToAirAnim@CEnemyFly@@UAEMXZ 
 ?GruntCommanderLaser@CProjectile@@QAEXXZ 
+?GruntSkaType_enum@@3VCEntityPropertyEnumType@@A 
+?GruntSkaType_values@@3PAVCEntityPropertyEnumValue@@A 
 ?GruntSoldierLaser@CProjectile@@QAEXXZ 
 ?GruntType_enum@@3VCEntityPropertyEnumType@@A 
 ?GruntType_values@@3PAVCEntityPropertyEnumValue@@A 
@@ -1731,6 +1743,7 @@ EXPORTS
 ?InitializeProjectile@CLarvaOffspring@@QAEXXZ 
 ?InitializeTactics@CEnemyBase@@QAEXXZ 
 ?InitializeWeapons@CPlayerWeapons@@QAEXJJJM@Z 
+?IsAnimFinished@CEnemyBase@@QAEHXZ 
 ?IsConnected@CPlayer@@QBEHXZ 
 ?IsFuss@CPlayer@@QAEHXZ 
 ?IsInFrustum@CEnemyBase@@QAEHPAVCEntity@@M@Z 
@@ -2114,7 +2127,7 @@ EXPORTS
 ?RenderCrosshair@CPlayerWeapons@@QAEXAAVCProjection3D@@PAVCDrawPort@@AAVCPlacement3D@@@Z 
 ?RenderDummyView@CPlayer@@QAEXPAVCDrawPort@@@Z 
 ?RenderGameView@CPlayer@@UAEXPAVCDrawPort@@PAX@Z 
-?RenderHUD@CPlayer@@QAEXAAVCPerspectiveProjection3D@@PAVCDrawPort@@V?$Vector@M$02@@KKH@Z 
+?RenderHUD@CPlayer@@QAEXAAVCPerspectiveProjection3D@@PAVCDrawPort@@V?$Vector@M$02@@KKHJ@Z 
 ?RenderHudPicFX@CPlayer@@QAEXPAVCDrawPort@@@Z 
 ?RenderParticles@CCannonBall@@UAEXXZ 
 ?RenderParticles@CEmiter@@QAEXXZ 
@@ -2125,7 +2138,7 @@ EXPORTS
 ?RenderPlayerView@CPlayer@@QAEXPAVCDrawPort@@H@Z 
 ?RenderScroll@CPlayer@@QAEXPAVCDrawPort@@@Z 
 ?RenderTextFX@CPlayer@@QAEXPAVCDrawPort@@@Z 
-?RenderWeaponModel@CPlayerWeapons@@QAEXAAVCPerspectiveProjection3D@@PAVCDrawPort@@V?$Vector@M$02@@KKH@Z 
+?RenderWeaponModel@CPlayerWeapons@@QAEXAAVCPerspectiveProjection3D@@PAVCDrawPort@@V?$Vector@M$02@@KKHJ@Z 
 ?ResetWeaponMovingOffset@CPlayerWeapons@@QAEXXZ 
 ?ReturnToStartPosition@CEnemyBase@@QAEHABVCEntityEvent@@@Z 
 ?ReturnToStartPosition@CEnemyFly@@QAEHABVCEntityEvent@@@Z 
@@ -2224,6 +2237,7 @@ EXPORTS
 ?SetDefaultProperties@CGravityMarker@@UAEXXZ 
 ?SetDefaultProperties@CGravityRouter@@UAEXXZ 
 ?SetDefaultProperties@CGrunt@@UAEXXZ 
+?SetDefaultProperties@CGruntSka@@UAEXXZ 
 ?SetDefaultProperties@CGuffy@@UAEXXZ 
 ?SetDefaultProperties@CHazeMarker@@UAEXXZ 
 ?SetDefaultProperties@CHeadman@@UAEXXZ 
@@ -2241,6 +2255,7 @@ EXPORTS
 ?SetDefaultProperties@CMirrorMarker@@UAEXXZ 
 ?SetDefaultProperties@CModelDestruction@@UAEXXZ 
 ?SetDefaultProperties@CModelHolder2@@UAEXXZ 
+?SetDefaultProperties@CModelHolder3@@UAEXXZ 
 ?SetDefaultProperties@CModelHolder@@UAEXXZ 
 ?SetDefaultProperties@CMovingBrush@@UAEXXZ 
 ?SetDefaultProperties@CMovingBrushMarker@@UAEXXZ 
@@ -2280,6 +2295,7 @@ EXPORTS
 ?SetDefaultProperties@CTacticsChanger@@UAEXXZ 
 ?SetDefaultProperties@CTacticsHolder@@UAEXXZ 
 ?SetDefaultProperties@CTeleport@@UAEXXZ 
+?SetDefaultProperties@CTerrainEntity@@UAEXXZ 
 ?SetDefaultProperties@CTextFXHolder@@UAEXXZ 
 ?SetDefaultProperties@CTimeController@@UAEXXZ 
 ?SetDefaultProperties@CTouchField@@UAEXXZ 
@@ -2350,6 +2366,10 @@ EXPORTS
 ?SightSound@CEnemyBase@@UAEXXZ 
 ?SingleShotgunBoring@CPlayerWeapons@@QAEMXZ 
 ?SizeModel@CEnemyBase@@UAEXXZ 
+?SkaCustomShadingType_enum@@3VCEntityPropertyEnumType@@A 
+?SkaCustomShadingType_values@@3PAVCEntityPropertyEnumValue@@A 
+?SkaShadowType_enum@@3VCEntityPropertyEnumType@@A 
+?SkaShadowType_values@@3PAVCEntityPropertyEnumValue@@A 
 ?SniperBoring@CPlayerWeapons@@QAEMXZ 
 ?SniperZoomDiscrete@CPlayerWeapons@@QAEHJAAH@Z 
 ?SoundType_enum@@3VCEntityPropertyEnumType@@A 
@@ -2381,6 +2401,8 @@ EXPORTS
 ?Stopped@CPlayerWeapons@@QAEHABVCEntityEvent@@@Z 
 ?StoreLast@CPlayerAnimator@@QAEXXZ 
 ?StretchItem@CItem@@QAEXABV?$Vector@M$02@@@Z 
+?StretchModel@CEnemyBase@@QAEXV?$Vector@M$02@@@Z 
+?StretchSingleModel@CEnemyBase@@QAEXV?$Vector@M$02@@@Z 
 ?Swim@CPlayerAnimator@@QAEXXZ 
 ?SwingKnife@CPlayerWeapons@@QAEHABVCEntityEvent@@@Z 
 ?SwitchType_enum@@3VCEntityPropertyEnumType@@A 
@@ -2516,6 +2538,7 @@ CGlobal_DLLClass
 CGradientMarker_DLLClass 
 CGravityMarker_DLLClass 
 CGravityRouter_DLLClass 
+CGruntSka_DLLClass 
 CGrunt_DLLClass 
 CGuffy_DLLClass 
 CHazeMarker_DLLClass 
@@ -2534,6 +2557,7 @@ CMeteorShower_DLLClass
 CMirrorMarker_DLLClass 
 CModelDestruction_DLLClass 
 CModelHolder2_DLLClass 
+CModelHolder3_DLLClass 
 CModelHolder_DLLClass 
 CMovingBrushMarker_DLLClass 
 CMovingBrush_DLLClass 
@@ -2573,6 +2597,7 @@ CSwitch_DLLClass
 CTacticsChanger_DLLClass 
 CTacticsHolder_DLLClass 
 CTeleport_DLLClass 
+CTerrainEntity_DLLClass 
 CTextFXHolder_DLLClass 
 CTimeController_DLLClass 
 CTouchField_DLLClass 
