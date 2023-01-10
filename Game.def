@@ -1,3 +1,4 @@
 LIBRARY GAME 
 EXPORTS 
 GAME_Create 
+GAME_Destroy 
