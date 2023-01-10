@@ -53,6 +53,8 @@ EXPORTS
 ??0CCommunicationInterface@@QAE@XZ 
 ??0CContentType@@QAE@ABV0@@Z 
 ??0CContentType@@QAE@XZ 
+??0CCrypt@@QAE@PADJ0@Z 
+??0CCrypt@@QAE@XZ 
 ??0CDisplayMode@@QAE@XZ 
 ??0CDrawPort@@QAE@ABV0@@Z 
 ??0CDrawPort@@QAE@PAV0@ABV?$AABBox@J$01@@@Z 
@@ -182,7 +184,7 @@ EXPORTS
 ??0CRenderModel@@QAE@XZ 
 ??0CSerial@@QAE@ABV0@@Z 
 ??0CSerial@@QAE@XZ 
-??0CSessionState@@QAE@ABV0@@Z 
+??0CSessionState@@QAE@AAV0@@Z 
 ??0CSessionState@@QAE@XZ 
 ??0CSetFPUPrecision@@QAE@W4FPUPrecisionType@@@Z 
 ??0CShader@@QAE@ABV0@@Z 
@@ -484,6 +486,7 @@ EXPORTS
 ??4CCollisionInfo@@QAEAAV0@ABV0@@Z 
 ??4CCommunicationInterface@@QAEAAV0@ABV0@@Z 
 ??4CContentType@@QAEAAV0@ABV0@@Z 
+??4CCrypt@@QAEAAV0@ABV0@@Z 
 ??4CDLLEntityClass@@QAEAAV0@ABV0@@Z 
 ??4CDisplayMode@@QAEAAV0@ABV0@@Z 
 ??4CDrawPort@@QAEAAV0@ABV0@@Z 
@@ -552,7 +555,6 @@ EXPORTS
 ??4CRationalEntity@@QAEAAV0@AAV0@@Z 
 ??4CRenderModel@@QAEAAV0@ABV0@@Z 
 ??4CSerial@@QAEAAV0@ABV0@@Z 
-??4CSessionState@@QAEAAV0@ABV0@@Z 
 ??4CSetFPUPrecision@@QAEAAV0@ABV0@@Z 
 ??4CShader@@QAEAAV0@ABV0@@Z 
 ??4CShadingInfo@@QAEAAV0@ABV0@@Z 
@@ -865,11 +867,11 @@ EXPORTS
 ?AllocateHeightMap@CTerrain@@QAEXJJ@Z 
 ?AllocateVirtualMemory@CTStream@@QAEXK@Z 
 ?AllowForGroundPolygon@CMovableEntity@@UAEHPAVCBrushPolygon@@@Z 
-?AllowRandom@CSessionState@@QAEAAHXZ 
 ?AnglesToDirectionVector@@YAXABV?$Vector@M$02@@AAV1@@Z 
 ?ApplyAction@CPlayerEntity@@UAEXABVCPlayerAction@@M@Z 
 ?ApplySurfaceToPolygon@CModelObject@@QAEXPAVCDrawPort@@PAVCProjection3D@@JJJK@Z 
 ?ApplySurfaceToPolygonsInRegion@CModelObject@@QAEXPAVCDrawPort@@PAVCProjection3D@@V?$AABBox@J$01@@JK@Z 
+?ArcheryFlags@CNetworkSession@@QAEAAJXZ 
 ?ArePolygonsPlanar@CObject3D@@QAEHXZ 
 ?AspectRatioL@CProjection3D@@QAEAAMXZ 
 ?AspectRatioR@CProjection3D@@QBEABMXZ 
@@ -1116,6 +1118,7 @@ EXPORTS
 ?Copy@CAnimObject@@QAEXAAV1@@Z 
 ?Copy@CBrush3D@@QAEXAAV1@MH@Z 
 ?Copy@CBrushMip@@QAEXAAV1@MH@Z 
+?Copy@CCollisionInfo@@QAEXAAV1@@Z 
 ?Copy@CEntity@@UAEXAAV1@K@Z 
 ?Copy@CLiveEntity@@UAEXAAVCEntity@@K@Z 
 ?Copy@CModelInstance@@QAEXAAV1@@Z 
@@ -1178,12 +1181,14 @@ EXPORTS
 ?CreateSectorBSPs@CObject3D@@QAEXXZ 
 ?CreateSectorIndices@CObject3D@@QAEXXZ 
 ?CreateSocket_t@CCommunicationInterface@@QAEXXZ 
+?CreateStringTableDefaults@CWorld@@QAEXXZ 
 ?CreateTexture_t@@YAXABVCTFileName@@0JJH@Z 
 ?CreateTexture_t@@YAXABVCTFileName@@JJH@Z 
 ?CreateWindowCanvas@CGfxLibrary@@QAEXPAXPAPAVCViewPort@@PAPAVCDrawPort@@@Z 
 ?CreateWorkCanvas@CGfxLibrary@@QAEXJJPAPAVCDrawPort@@@Z 
 ?Create_t@CTFileStream@@QAEXABVCTFileName@@W4CreateMode@CTStream@@@Z 
 ?Create_t@CTextureData@@QAEXPBVCImageInfo@@JJH@Z 
+?Crypt@CCrypt@@QAEHPADJ0@Z 
 ?CurrentTick@CTimer@@QBE?BMXZ 
 ?DamageType_enum@@3VCEntityPropertyEnumType@@A 
 ?DamageType_values@@3PAVCEntityPropertyEnumValue@@A 
@@ -1194,6 +1199,7 @@ EXPORTS
 ?DecommitPage@CTStream@@QAEXJ@Z 
 ?DecomposeRotationMatrix@@YAXAAV?$Vector@M$02@@ABV?$Matrix@M$02$02@@@Z 
 ?DecomposeRotationMatrixNoSnap@@YAXAAV?$Vector@M$02@@ABV?$Matrix@M$02$02@@@Z 
+?DecryptFileA@CCrypt@@QAEHPAD0W4eCryptOwner@1@@Z 
 ?DefaultAnimation@CAnimData@@QAEXXZ 
 ?DeleteAnimation@CAnimData@@QAEXJ@Z 
 ?DeleteBrushMip@CBrush3D@@QAEXPAVCBrushMip@@@Z 
@@ -1264,6 +1270,8 @@ EXPORTS
 ?Dummy@CMovableModelEntity@@QAEHABVCEntityEvent@@@Z 
 ?Dummy@CPlayerEntity@@QAEHABVCEntityEvent@@@Z 
 ?Dump@CNetworkMessage@@QAEXXZ 
+?DumpCachedModels@CWorld@@QAEXXZ 
+?DumpEntities@CWorld@@QAEXVCTFileName@@@Z 
 ?DumpSyncToFile_t@CSessionState@@QAEXAAVCTStream@@J@Z 
 ?DumpSync_t@CEntity@@UAEXAAVCTStream@@J@Z 
 ?DumpSync_t@CMovableEntity@@UAEXAAVCTStream@@J@Z 
@@ -1281,6 +1289,7 @@ EXPORTS
 ?EnableInput@CInput@@QAEXPAVCViewPort@@@Z 
 ?EnableSrcRememberFN@CModelInstance@@SAXH@Z 
 ?EnableStreamHandling@CTStream@@SAXXZ 
+?EncryptFileA@CCrypt@@QAEHPAD0W4eCryptOwner@1@@Z 
 ?End@CEntity@@QAEXXZ 
 ?EndDriver_D3D@CGfxLibrary@@AAEXXZ 
 ?EndDriver_OGL@CGfxLibrary@@AAEXXZ 
@@ -1537,6 +1546,7 @@ EXPORTS
 ?GetFPUPrecision@@YA?AW4FPUPrecisionType@@XZ 
 ?GetFieldSettings@CEntity@@UAEPAVCFieldSettings@@XZ 
 ?GetFileCRC32_t@@YAKABVCTFileName@@@Z 
+?GetFileOwner@CCrypt@@QAE?AW4eCryptOwner@1@PAD@Z 
 ?GetFileTimeStamp_t@@YAJABVCTFileName@@@Z 
 ?GetFirstEmptyPatchIndex@CEditModel@@QAEHAAJ@Z 
 ?GetFirstLocalPlayerSource@CNetworkLibrary@@QAEPAVCPlayerSource@@XZ 
@@ -1650,6 +1660,7 @@ EXPORTS
 ?GetModelForRendering@CEntity@@UAEPAVCModelObject@@XZ 
 ?GetModelInfo@CModelObject@@QAEXAAVCModelInfo@@@Z 
 ?GetModelInstance@CEntity@@QAEPAVCModelInstance@@XZ 
+?GetModelInstance@CWorld@@QAEPAVCModelInstance@@VCTFileName@@@Z 
 ?GetModelInstanceForRendering@CEntity@@UAEPAVCModelInstance@@XZ 
 ?GetModelMainTexture@CEntity@@QAEABVCTFileName@@XZ 
 ?GetModelObject@CEntity@@QAEPAVCModelObject@@XZ 
@@ -1657,7 +1668,6 @@ EXPORTS
 ?GetModelVertices@CModelObject@@QAEXAAV?$CStaticStackArray@V?$Vector@M$02@@@@AAV?$Matrix@M$02$02@@AAV?$Vector@M$02@@MM@Z 
 ?GetModelVerticesAbsolute@CEntity@@QAEXAAV?$CStaticStackArray@V?$Vector@M$02@@@@MM@Z 
 ?GetMouseLookMode@CInput@@QBEHXZ 
-?GetMouseState@CSessionState@@QAEHAAUtagPOINT@@AAJAAH@Z 
 ?GetMyPlayerIndex@CPlayerEntity@@QAEJXZ 
 ?GetName@CEntity@@UBEABVCTString@@XZ 
 ?GetName@CModelInstance@@QAEABVCTString@@XZ 
@@ -1789,6 +1799,7 @@ EXPORTS
 ?GetType@CNetworkMessage@@QBE?AW4NetworkMessageType@@XZ 
 ?GetType@CPlayerEntity@@UAEJXZ 
 ?GetType@CRationalEntity@@UAEJXZ 
+?GetUDPBufferSizes@CCommunicationInterface@@QAEXPAJ0@Z 
 ?GetUsedCount@CSerial@@QAEJXZ 
 ?GetUsedMemory@CAnimSet@@UAEJXZ 
 ?GetUsedMemory@CArrayHolder@@QAEJXZ 
@@ -1972,6 +1983,7 @@ EXPORTS
 ?IsEmpty@CListHead@@QBEHXZ 
 ?IsEmptyBrush@CEntity@@QBEHXZ 
 ?IsFieldBrushesOn@CWorldRenderPrefs@@QAEHXZ 
+?IsFileEncrypted@CCrypt@@QAEHPADW4eCryptOwner@1@@Z 
 ?IsFileReadOnly@@YAHABVCTFileName@@@Z 
 ?IsFirstMip@CBrushMip@@QAEHXZ 
 ?IsFixedWidth@CFontData@@QBEHXZ 
@@ -2364,6 +2376,7 @@ EXPORTS
 ?Precache@CEntity@@UAEXXZ 
 ?PrecacheClass@CDLLEntityClass@@QAEXJJ@Z 
 ?PrecacheClass@CEntity@@QAEXJJ@Z 
+?PrecacheDynamicModels@CWorld@@QAEXXZ 
 ?PrecacheEntities_t@CWorld@@QAEXXZ 
 ?PrecacheModel@CDLLEntityClass@@QAEXJ@Z 
 ?PrecacheModel@CEntity@@QAEXJ@Z 
@@ -2691,6 +2704,12 @@ EXPORTS
 ?ResumePlayingObjects@CSoundData@@QAEXXZ 
 ?Return@CEntity@@QAEXJABVCEntityEvent@@@Z 
 ?Return@CRationalEntity@@QAEXJABVCEntityEvent@@@Z 
+?Reverse@CTString@@QAE?AV1@PBD@Z 
+?Reverse@CTString@@QAE?AV1@PBV1@@Z 
+?ReverseCompare@CTString@@QAEHPBD@Z 
+?ReverseCompare@CTString@@QAEHPBV1@@Z 
+?ReverseNoCaseCompare@CTString@@QAEHPBD@Z 
+?ReverseNoCaseCompare@CTString@@QAEHPBV1@@Z 
 ?Rewind@CNetworkMessage@@QAEXXZ 
 ?Right@CTString@@QBE?AV1@H@Z 
 ?Rnd@CSessionState@@QAEKXZ 
@@ -2704,7 +2723,9 @@ EXPORTS
 ?SE_LoadDefaultFonts@@YAXXZ 
 ?SE_PretouchIfNeeded@@YAXXZ 
 ?SE_UpdateWindowHandle@@YAXPAUHWND__@@@Z 
-?SSHandleWindowsMessage@CSessionState@@QAEHABUtagMSG@@@Z 
+?SSGetDemoMessage@CSessionState@@QAEHJAAUtagMSG@@AAH@Z 
+?SSQueueDemoMessage@CSessionState@@QAEXABUtagMSG@@@Z 
+?SSResetDemoMessageQueue@CSessionState@@QAEXXZ 
 ?STAT_Report@@YAXAAVCTString@@@Z 
 ?STAT_Reset@@YAXXZ 
 ?Save@CInfoFile@@QAEXABVCTFileName@@HVCTString@@@Z 
@@ -2920,6 +2941,7 @@ EXPORTS
 ?SetPaperColor@CModelRenderPrefs@@QAEXK@Z 
 ?SetParent@CEntity@@QAEXPAV1@@Z 
 ?SetParentBone@CModelInstance@@QAEXJ@Z 
+?SetPassword@CInfoFile@@QAEXVCTString@@@Z 
 ?SetPatchStretch@CEditModel@@QAEXJM@Z 
 ?SetPatchesMask@CModelObject@@QAEXK@Z 
 ?SetPathName@CInfoFile@@QAEXAAVCTString@@@Z 
@@ -2961,6 +2983,7 @@ EXPORTS
 ?SetSpawnFlags@CEntity@@QAEXK@Z 
 ?SetSpawnFlags@CWorld@@QAEXK@Z 
 ?SetSpeed@CAnimData@@QAEXJM@Z 
+?SetState@CCrypt@@AAEHW4eCryptError@1@@Z 
 ?SetString@CShell@@QAEXABVCTString@@0@Z 
 ?SetSunColors@@YAXKK@Z 
 ?SetSurfaceColor@CModelObject@@QAEXJJK@Z 
@@ -2986,6 +3009,7 @@ EXPORTS
 ?SetTimerAt@CEntity@@QAEXM@Z 
 ?SetTimerAt@CRationalEntity@@QAEXM@Z 
 ?SetType@CEntity@@QAEXJ@Z 
+?SetUDPBufferSizes@CCommunicationInterface@@QAEXPAJ0@Z 
 ?SetValue@CShell@@QAEXABVCTString@@0@Z 
 ?SetVariableWidth@CFontData@@QAEXXZ 
 ?SetVerticesFillType@CWorldRenderPrefs@@QAEXW4FillType@1@@Z 
@@ -3167,6 +3191,7 @@ EXPORTS
 ?UpdateAnimations_t@CEditModel@@QAEXAAVCTFileName@@@Z 
 ?UpdateBoundingBox@CBrushMip@@QAEXXZ 
 ?UpdateDynamicLayers@CShadowMap@@QAEKXZ 
+?UpdateGlobals@CLightSource@@QAEXXZ 
 ?UpdateLayer@CLightSource@@QAEXAAVCBrushShadowLayer@@@Z 
 ?UpdateMasterBuffers@CCommunicationInterface@@QAEXXZ 
 ?UpdateMaxPos@CTStream@@QAEXPAE@Z 
@@ -3345,6 +3370,7 @@ EXPORTS
 ?g_Comm@@3VCCommunicationInterface@@A 
 ?g_gdp@@3UGame_Drawports@@A 
 ?gam_iPrecachePolicy@@3JA 
+?hunters_key@CCrypt@@2PAEA 
 ?shaBegin@@YAXAAVCAnyProjection3D@@PAVCShader@@@Z 
 ?shaBlendFunc@@YAXW4GfxBlend@@0@Z 
 ?shaCalculateLight@@YAXXZ 
@@ -3413,12 +3439,16 @@ EXPORTS
 ?shaSetUVMapsArray@@YAXPAUGFXTexCoord@@J@Z 
 ?shaSetVertexArray@@YAXPAUGFXVertex4@@J@Z 
 ?shaSetVertexColors@@YAXPAUGFXColor@@@Z 
+?ska_ClearStringTable@@YAXXZ 
+?ska_DumpStringTable@@YAXVCTFileName@@@Z 
 ?ska_FindStringInTable@@YAJVCTString@@@Z 
 ?ska_GetIDFromStringTable@@YAJVCTString@@@Z 
 ?ska_GetStringFromTable@@YA?AVCTString@@J@Z 
 ?ska_StringTableRead_t@@YAXPAVCTStream@@@Z 
 ?ska_StringTableWrite_t@@YAXPAVCTStream@@@Z 
 ?snd_iFormat@@3JA 
+?sunstorm_key@CCrypt@@2PAEA 
+?user_key@CCrypt@@2PAEA 
 CEntity_DLLClass 
 CLiveEntity_DLLClass 
 CMovableBrushEntity_DLLClass 
