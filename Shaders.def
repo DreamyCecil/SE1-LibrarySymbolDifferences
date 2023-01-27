@@ -16,7 +16,6 @@ Shader_Desc_Base_TransparentDS
 Shader_Desc_Color 
 Shader_Desc_Detail 
 Shader_Desc_Invisible 
-Shader_Desc_LavaDisplace 
 Shader_Desc_MultiLayer 
 Shader_Desc_Reflection 
 Shader_Desc_ReflectionAndSpecular 
@@ -27,7 +26,6 @@ Shader_Desc_SpecularDS
 Shader_Desc_Translucent 
 Shader_Detail 
 Shader_Invisible 
-Shader_LavaDisplace 
 Shader_MultiLayer 
 Shader_Reflection 
 Shader_ReflectionAndSpecular 
