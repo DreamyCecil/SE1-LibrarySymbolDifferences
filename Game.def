@@ -82,3 +82,7 @@ EXPORTS
 ?_csConsoleState@@3W4ConsoleState@@A 
 ?_strConsoleInputBuffer@@3VCTString@@A 
 ?astrAxisNames@@3PAPADA 
+?con_bTalk@@3JA 
+?gam_strCustomLevel@@3VCTString@@A 
+?gam_strJoinAddress@@3VCTString@@A 
+?gam_strSessionName@@3VCTString@@A 

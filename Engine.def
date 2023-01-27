@@ -665,7 +665,6 @@ EXPORTS
 ?AspectRatioR@CProjection3D@@QBEABMXZ 
 ?AtEOF@CTStream@@QAEHXZ 
 ?Attach@CImageInfo@@QAEXPAEJJJ@Z 
-?AutoAdjustSettings@CNetworkLibrary@@QAEXXZ 
 ?AutoMipModelingOff@CModelObject@@QAEXXZ 
 ?AutoMipModelingOn@CModelObject@@QAEXXZ 
 ?AutoSetAttachments@CModelObject@@QAEXXZ 
@@ -743,7 +742,7 @@ EXPORTS
 ?CheckEventPrediction@CEntity@@QAEHKK@Z 
 ?CheckEventPrediction@CSessionState@@QAEHPAVCEntity@@KK@Z 
 ?CheckForCollisionNow@CMovableModelEntity@@QAEHJPAPAVCEntity@@@Z 
-?CheckJoystick@CInput@@AAEXJ@Z 
+?CheckJoystick@CInput@@AAEHJ@Z 
 ?CheckLayersUpToDate@CBrushShadowMap@@UAEXXZ 
 ?CheckLayersUpToDate@CShadowMap@@UAEXXZ 
 ?CheckVersion_t@CNetworkLibrary@@QAEXAAVCTStream@@HAAH@Z 
@@ -1418,6 +1417,8 @@ EXPORTS
 ?IsCurrentModeDH@CGfxLibrary@@QAEHXZ 
 ?IsDemoPlayFinished@CNetworkLibrary@@QAEHXZ 
 ?IsDerivedFromClass@@YAHPAVCEntity@@PBD@Z 
+?IsDisconnected@CNetworkLibrary@@QAEHXZ 
+?IsDisconnected@CSessionState@@QAEHXZ 
 ?IsDualHead@CDisplayMode@@QAEHXZ 
 ?IsDualHead@CDrawPort@@QAEHXZ 
 ?IsEditorModelsOn@CWorldRenderPrefs@@QAEHXZ 
@@ -1996,7 +1997,7 @@ EXPORTS
 ?SelectSectorsInRange@CBrushMip@@QAEXAAV?$CSelection@VCBrushSector@@$03@@V?$AABBox@M$02@@@Z 
 ?SelectSimilarByColor@CBrushPolygon@@QAEXAAV?$CSelection@VCBrushPolygon@@$0BAA@@@@Z 
 ?SelectSimilarByTexture@CBrushPolygon@@QAEXAAV?$CSelection@VCBrushPolygon@@$0BAA@@@J@Z 
-?SendActionPacket@CPlayerSource@@QAEXXZ 
+?SendActionsToServer@CNetworkLibrary@@QAEXXZ 
 ?SendBroadcast@CMessageDispatcher@@QAEXABVCNetworkMessage@@@Z 
 ?SendChat@CNetworkLibrary@@QAEXKKABVCTString@@@Z 
 ?SendEvent@CEntity@@QAEXABVCEntityEvent@@@Z 
@@ -2323,7 +2324,9 @@ EXPORTS
 ?WarningMessage@@YAXPBDZZ 
 ?WarpPlaneL@CProjection3D@@QAEAAV?$Plane@M$02@@XZ 
 ?WarpPlaneR@CProjection3D@@QBEABV?$Plane@M$02@@XZ 
+?WhyDisconnected@CNetworkLibrary@@QAEABVCTString@@XZ 
 ?WireOn@CModelRenderPrefs@@QAEHXZ 
+?WriteActionPacket@CPlayerSource@@QAEXAAVCNetworkMessage@@@Z 
 ?WriteBrushes_t@CWorld@@QAEXPAVCTStream@@@Z 
 ?WriteChunk_t@CTStream@@QAEXPAXJ@Z 
 ?WriteEntityPointer_t@CEntity@@QAEXPAVCTStream@@VCEntityPointer@@@Z 
@@ -2428,11 +2431,12 @@ EXPORTS
 ?_pselenSelectOnRender@@3PAV?$CSelection@VCEntity@@$00@@A 
 ?_sfStats@@3VCStatForm@@A 
 ?_strEngineBuild@@3VCTString@@A 
+?_strLogFile@@3VCTString@@A 
 ?_toSimpleModelShadow@@3VCTextureObject@@A 
 ?_toTextureReloading@@3VCTextureObject@@A 
 ?_tpGlobal@@3VCTexParams@@A 
-?_ulEngineBuildType@@3KA 
-?_ulEngineBuildVersion@@3KA 
+?_ulEngineBuildMajor@@3KA 
+?_ulEngineBuildMinor@@3KA 
 ?_vViewerLightDirection@@3V?$Vector@M$02@@A 
 ?_vpixSelectNearPoint@@3V?$Vector@J$01@@A 
 ?_wrpWorldRenderPrefs@@3VCWorldRenderPrefs@@A 
